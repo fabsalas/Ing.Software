@@ -11,16 +11,18 @@
    
         <div class="container">
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-5" >
+                
+                <div class="col-2">
                     <div style="margin-top:10%">
                         <h1 style="color:white; font-family:unset;"> MASTERBIKES</h1>
                     </div>
-                    <div class="card" style="width: 50%; border-radius:10%; margin-top:10%">
+                </div>
+                <div class="col-5" >
+                    <div class="card" style="width: 50%; border-radius:10%; margin-top:25%">
                         <img src="../Img/user-login.png" class="card-img-top" style="width:60%; margin-left: 20%; margin-top: 10%;">
                         <div class="card-body">
                         <h6>¿Ingresar como cliente?</h6>
-                        <a class="btn btn-primary stretched-link" style="margin-left: 25%;">Ingresar</a>
+                        <a class="btn btn-primary stretched-link" style="margin-left: 25%;" id="btn-ingre_cli">Ingresar</a>
                         </div>
                     </div>
                     <br/>
@@ -28,7 +30,7 @@
                         <img src="../Img/user-login.png" class="card-img-top" style="width:60%; margin-left: 20%; margin-top: 10%;">
                         <div class="card-body">
                         <h6>¿Ingresar como Supervisor?</h6>
-                        <a class="btn btn-primary stretched-link" style="margin-left: 25%;">Ingresar</a>
+                        <a class="btn btn-primary stretched-link" style="margin-left: 25%;" id="btn-ingre_sup">Ingresar</a>
                         </div>
                     </div>
                 
@@ -37,55 +39,68 @@
 
                 </div>
                 <div class="col-5">
-                    <div class="shadow p-3 mb-5 bg-white rounded;" style="margin-top:52%; width: 100%; border-radius: 10%;">
+                   
                     
                             
                         <div>
-                            <h2 style="text-align:center;">Sign in</h2>
-                            <br/>
+                            
+                            
                                 <form id = "formu_cli">
-                                    <div class="form-group">
-                                    <b><label for="email1">Correo</label></b>
-                                    <input type="email" class="form-control" id="email" placeholder="Correo electronico">
-                                    
+                                    <div class="shadow p-3 mb-5 bg-white rounded;" style="margin-top:52%; width: 100%; border-radius: 10%;">
+                                        <button type="button" class="close" aria-label="Close" style="margin-right: 95%;" id="btn-cerrar-cli">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <br/>
+                                        <h2 style="text-align:center;">Sign in</h2>
+                                        <div class="form-group">
+                                        <b><label for="email1">Correo</label></b>
+                                        <input type="email" class="form-control" id="email" placeholder="Correo electronico">
+                                        
+                                        </div>
+                                        <div class="form-group">
+                                        <b><label for="clave">Contraseña</label></b>
+                                        <input type="password" class="form-control" id="clave" placeholder="Contraseña">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
+                                        <div style="margin-left: 27%; margin-top: 2%;">
+                                            <a href="">¿Olvidaste tu contraseña?</a>
+                                        </div>
+                                        <br/>
+                                        <a type="button" class="btn btn-success btn-lg btn-block" style="margin-bottom: 5%;" a href="Signup.html">Crear cuenta</a>
                                     </div>
-                                    <div class="form-group">
-                                    <b><label for="clave">Contraseña</label></b>
-                                    <input type="password" class="form-control" id="clave" placeholder="Contraseña">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
-                                    <div style="margin-left: 27%; margin-top: 2%;">
-                                        <a href="">¿Olvidaste tu contraseña?</a>
-                                    </div>
-                                    <br/>
-                                   <a type="button" class="btn btn-success btn-lg btn-block" style="margin-bottom: 5%;" a href="Signup.html">Crear cuenta</a>
                                 </form>
 
                         </div>   
                         
                         <div>
-                            <h2 style="text-align:center;">Sign in</h2>
-                            <br/>
+                            
                                 <form id = "formu_super">
-                                    <div class="form-group">
-                                    <b><label for="email1">Correo</label></b>
-                                    <input type="email" class="form-control" id="email" placeholder="Correo electronico">
-                                    
-                                    </div>
-                                    <div class="form-group">
-                                    <b><label for="clave">Contraseña</label></b>
-                                    <input type="password" class="form-control" id="clave" placeholder="Contraseña">
-                                    </div>
-                                    <div class="form-group">
-                                        <b><label for="cod">Codigo Trabajador</label></b>
-                                        <input type="text" class="form-control" id="cod" placeholder="12345">
+                                    <div class="shadow p-3 mb-5 bg-white rounded;" style="margin-top:52%; width: 100%; border-radius: 10%;">
+                                        <button type="button" class="close" aria-label="Close" style="margin-right: 95%;" id="btn-cerrar-sup">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <br/>
+                                        <h2 style="text-align:center;">Sign in</h2>
+                                        <div class="form-group">
+                                        <b><label for="email1">Correo</label></b>
+                                        <input type="email" class="form-control" id="email" placeholder="Correo electronico">
+                                        
                                         </div>
-                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
-                                    <div style="margin-left: 27%; margin-top: 2%;">
-                                        <a href="">¿Olvidaste tu contraseña?</a>
+                                        <div class="form-group">
+                                        <b><label for="clave">Contraseña</label></b>
+                                        <input type="password" class="form-control" id="clave" placeholder="Contraseña">
+                                        </div>
+                                        <div class="form-group">
+                                            <b><label for="cod">Codigo Trabajador</label></b>
+                                            <input type="text" class="form-control" id="cod" placeholder="12345">
+                                            </div>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
+                                        <div style="margin-left: 27%; margin-top: 2%;">
+                                            <a href="">¿Olvidaste tu contraseña?</a>
+                                        </div>
+                                        <br/>
+                                        <a type="button" class="btn btn-success btn-lg btn-block" style="margin-bottom: 5%;" a href="Signup.html">Crear cuenta</a>
                                     </div>
-                                    <br/>
-                                   <a type="button" class="btn btn-success btn-lg btn-block" style="margin-bottom: 5%;" a href="Signup.html">Crear cuenta</a>
                                 </form>
 
                         </div>       
@@ -109,7 +124,39 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 <!--Jquery... -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#formu_cli").hide();
+        $("#formu_super").hide();
 
+    //click a tarjetas
+    $("#btn-ingre_cli").click(function(){
+        event.preventDefault();
+        $("#formu_cli").show();
+
+    })
+
+    $("#btn-ingre_sup").click(function(){
+        event.preventDefault();
+        $("#formu_super").show();
+
+    })
+
+    //click a icono cerrar
+    $("#btn-cerrar-cli").click(function(){
+        event.preventDefault();
+        $("#formu_cli").hide();
+
+    })
+    $("#btn-cerrar-sup").click(function(){
+        event.preventDefault();
+        $("#formu_super").hide();
+        
+    })
+
+
+    })
+</script>
 
 
 </body>
