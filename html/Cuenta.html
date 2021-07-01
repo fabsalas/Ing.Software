@@ -470,7 +470,7 @@
                             <!--Funcion historial de mantención-->
                             <div class="card" id="card-historial-ma" style="margin-top:10%;margin-left: 10%;width:72%; opacity:92%">
                               <div class="card-header">
-                                <h5> Historial de compras
+                                <h5> Historial de Mantención
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btn-close-him">
                                     <span aria-hidden="true">&times;</span>
                                   </button></h5>
@@ -514,6 +514,20 @@
                         <div class="col-md-2"></div>
                     </div>    
               </div>
+              <br/>
+              <!--inicia footer-->
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+                <footer>
+                  <div >
+                    <button style="border-radius: 50%; margin-top:10%;margin-left: 10%;" id="btn-pop" tabindex="0" class="btn btn-lg btn-info" role="button" data-toggle="popover" data-trigger="focus" title="Mesa de ayuda" data-content="Contactenos para info:    Número: +56923412345   Correo: masterbike@gmail.com ">¿?</button>
+                   
+                  </div>
+
+                </footer>
                          
                 
            
@@ -538,6 +552,7 @@
         $('#list_sol').hide()
         $('#btn-list-c').hide()
         $('#his-comp').hide()
+        $('#card-historial-ma').hide()
         
 
     //para mostrar el listado de pedidos
@@ -590,12 +605,28 @@
     $("#btn-close-h").click(function(){
         event.preventDefault();
         $('#his-comp').hide();
-       
-        
+
+    })
+    //para abrir la función historial de mantención
+    $("#btn-him").click(function(){
+        event.preventDefault();
+        $('#card-historial-ma').show();
         
 
     })
+    
 
+    //Para cerrar el historial de mantención
+    $("#btn-close-him").click(function(){
+        event.preventDefault();
+        $("#card-historial-ma").hide();
+       
+
+    })
+    //boton popovers 
+    $('#btn-pop').popover({
+    trigger: 'focus'
+    })
     
     
    
