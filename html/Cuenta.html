@@ -85,14 +85,14 @@
                                 <ul class="list-group list-group-flush">
                                   <button type="button" class="btn btn-light" id="btn-pe">Pedidos</button>
                                   <button type="button" class="btn btn-light" id="btn-so">Solicitud de Reparación</button>
-                                  <button type="button" class="btn btn-light" id="btn-hi">Historial de compra</button>
+                                  <button type="button" class="btn btn-light" id="btn-hi">Historial de compras</button>
                                   <button type="button" class="btn btn-light" id="btn-him">Historial de mantención</button>
                                 </ul>
                               </div>
                         </div>
                         <!--Menú de cuenta termina aqui-->
                         <!--Listado de pedidos-->
-                        <div class="col-md-8" style="margin-top:10%; margin-left:10%;" id="list-pe">
+                      <div class="col-md-8" style="margin-top:10%; margin-left:10%;" id="list-pe">
                             <div class="card text-center">
                                 
                                 <div class="card-header">
@@ -135,114 +135,261 @@
                                   Última actualización: 30 seg 
                                 </div>
                               </div>
-                        </div>
+                      </div>
                          <!--Listado de pedidos termina aqui-->
                           <!--modal para boton ver-->
-                        <div class="modal fade" id="modalver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Detalle de Compra</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <td colspan="2"><b>N° Pedido:</b></td>
-                                                    <td colspan="2">1434</td>  
-                                                </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Producto:</b></td>
-                                                <td colspan="2">JEEP Bicicleta Baltoro Aro 29</td>  
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td colspan="2"><b>Detalle:</b></td>
-                                                <td colspan="2">$369.990</td> 
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Envío Por:</b></td>
-                                                <td colspan="2">Chileexpress($10.000)</td> 
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Total con envío:</b></td>
-                                                <td colspan="2">$ 379.000</td> 
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Método de pago:</b></td>
-                                                <td colspan="2">Transbank Webpay</td>  
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                          <div class="modal fade" id="modalver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Detalle de Compra</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <table class="table table-bordered">
+                                              <thead>
+                                                  <tr>
+                                                      <td colspan="2"><b>N° Pedido:</b></td>
+                                                      <td colspan="2">1434</td>  
+                                                  </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Producto:</b></td>
+                                                  <td colspan="2">JEEP Bicicleta Baltoro Aro 29</td>  
+                                              </tr>
+                                              </thead>
+                                              <tbody>
+                                              <tr>
+                                                  <td colspan="2"><b>Detalle:</b></td>
+                                                  <td colspan="2">$369.990</td> 
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Envío Por:</b></td>
+                                                  <td colspan="2">Chileexpress($10.000)</td> 
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Total con envío:</b></td>
+                                                  <td colspan="2">$ 379.000</td> 
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Método de pago:</b></td>
+                                                  <td colspan="2">Transbank Webpay</td>  
+                                              </tr>
+                                              </tbody>
+                                          </table>
+                                  
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                      
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                         <!--modal para boton ver termina aqui-->
                         
-                        <!--modal para ver opc2-->
-                        <div class="modal fade" id="modalver2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Detalle de Compra</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <td colspan="2"><b>N° Pedido:</b></td>
-                                                    <td colspan="2">27363</td>  
-                                                </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Producto:</b></td>
-                                                <td colspan="2">OXFORD Bicicleta Rako Aro 29                                                </td>  
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td colspan="2"><b>Detalle:</b></td>
-                                                <td colspan="2">$329.990</td> 
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Envío Por:</b></td>
-                                                <td colspan="2">Chileexpress($10.000)</td> 
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Total con envío:</b></td>
-                                                <td colspan="2">$ 339.000</td> 
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2"><b>Método de pago:</b></td>
-                                                <td colspan="2">Tarjeta de Credito</td>  
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                          <!--modal para ver opc2-->
+                          <div class="modal fade" id="modalver2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Detalle de Compra</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <table class="table table-bordered">
+                                              <thead>
+                                                  <tr>
+                                                      <td colspan="2"><b>N° Pedido:</b></td>
+                                                      <td colspan="2">27363</td>  
+                                                  </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Producto:</b></td>
+                                                  <td colspan="2">OXFORD Bicicleta Rako Aro 29                                                </td>  
+                                              </tr>
+                                              </thead>
+                                              <tbody>
+                                              <tr>
+                                                  <td colspan="2"><b>Detalle:</b></td>
+                                                  <td colspan="2">$329.990</td> 
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Envío Por:</b></td>
+                                                  <td colspan="2">Chileexpress($10.000)</td> 
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Total con envío:</b></td>
+                                                  <td colspan="2">$ 339.000</td> 
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2"><b>Método de pago:</b></td>
+                                                  <td colspan="2">Tarjeta de Credito</td>  
+                                              </tr>
+                                              </tbody>
+                                          </table>
+                                  
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                      
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                         <!--modal para ver opc2 Termina aqui-->
+
+                         <!--listado de solicitud de reparación-->
+                        <div class="card" style="width:72%; margin-top:10%;margin-left: 10%;opacity: 94%" id="list_sol">
+                          <div class="card-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btn-close-s">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <ul class="nav">
+                              <li class="nav-item mr-2">
+                                <h5 class="header-title">Solicitud de Reparación</h5>
+                              </li>
+                              <li class="nav-item mr-2">
+                                    <button type="primary" class="btn btn-primary" id="btn-nueva">Nueva</button>
+                              </li>
+                              <li class="nav-item mr-2">
+                                    <button type="primary" class="btn btn-info" id="btn-consultar">Consultar</button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="card-body" id="card-form">
+                            <form>
+                              <div class="form-group">
+                                <label for="nombre"><b>Nombre</b></label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                              </div>
+                              <div class="form-group">
+                                <label for="apellidos"><b>Apellidos</b></label>
+                                <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+                              </div>
+                              <div class="form-group">
+                                <label for="n-contacto"><b>N° de contacto</b></label>
+                                <input type="numeber" class="form-control" id="n-contacto" placeholder="9 123 234 78">
+                              </div>
+                              <div class="form-group">
+                                <label for="email"><b>Email</b></label>
+                                <input type="email" class="form-control" id="email" placeholder="correo@gmail.com">
+                              </div>    
+                              <div class="form-group">
+                                <label for="e-servicio"><b>Eliga servicio que necesita</b></label>
+                                <select multiple class="form-control" id="e-servicio">
+                                  <option>1.-Luces defectuosas.</option>
+                                  <option>2.-Luces rotas.</option>
+                                  <option>3.-Rueda Pinchada.</option>
+                                  <option>4.-Cambio frenos.</option>
+                                  <option>5.-Reparación completa.</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="comentario">Comentarios</label>
+                                <textarea class="form-control" id="comentario" rows="4"></textarea>
+                              </div>
+                              <form>
+                                <div class="form-group">
+                                  <label for="add-img">Adjunte imagen</label>
+                                  <input type="file" class="form-control-file" id="add-img">
+                                </div>
+                              </form>
+                              <button type="submit" class="btn btn-primary btn-lg btn-block" id="enviar-form" data-toggle="modal" data-target="#modalver-s">Enviar</button>
+                            </form>
+                          </div>
+                            <!--listdo de solicitudes termina aqui-->
+                            <!--modal de listado enviado-->
+                            <div class="modal" tabindex="-1" id="modalver-s">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">N° 89183</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Su solicitud ha sido enviada con exito</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--modal de listado enviado termina aqui-->
+
+                            <!--listado de solicitudes hechas-->
+                            <div class="card" id="btn-list-c" >
+                              <div class="card-body">
+                                <h5 class="card-title">Solicitudes Hechas</h5>
+                                <div class="card-body">
+                                  <table class="table">
+                                    <thead class="thead-dark">
+                                      <tr>
+                                        <th scope="col">N°de solicitud</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Apellidos</th>
+                                        <th scope="col">N° Contacto</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Servicio</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1234</th>
+                                        <td>Abierta</td>
+                                        <td>Mark</td>
+                                        <td>Otto Bird</td>
+                                        <td>987653476</td>
+                                        <td>coo@mdo.com</td>
+                                        <td>Rep.Completa</td>
+                                        
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2435</th>
+                                        <td>Abierta</td>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>976542312</td>
+                                        <td>Jacob@mdo.com</td>
+                                        <td>Cambio frenos</td>
+                                      
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3564</th>
+                                        <td>Abierta</td>
+                                        <td>Larry</td>
+                                        <td>bird sans</td>
+                                        <td>907652431</td>
+                                        <td>Larry@mdo.com</td>
+                                        <td>Rueda pinchada</td>
+                                        
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <!--listado de solicitudes hechas-->
+
+                            <!--historial de compra-->
+
+                          </div>
+                        </div>
                         <div class="col-md-2"></div>
-                    </div>
-                </div>
+                    </div>    
+              </div>
+                         
                 
            
        
@@ -262,6 +409,10 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('#list-pe').hide()
+        $('#card-form').hide()
+        $('#list_sol').hide()
+        $('#btn-list-c').hide()
+        
 
     //para mostrar el listado de pedidos
     $("#btn-pe").click(function(){
@@ -274,8 +425,36 @@
         event.preventDefault();
         $("#list-pe").hide();
     })
-    
+    //PARA MOSTRAR EL LISTADO DE SOLICITUD DE REPARACIÓN
+    $("#btn-so").click(function(){
+        event.preventDefault();
+        $("#list_sol").show();
+    })
 
+    //para mostrar el formulario y aparasca cuando seleccione el botón nueva 
+    $("#btn-nueva").click(function(){
+        event.preventDefault();
+        $("#card-form").show();
+        $('#btn-list-c').hide();
+    })
+    
+    //PARA CERRAR EL LISTADO DE SOLICITUD DE REPARACIÓN
+    $("#btn-close-s").click(function(){
+        event.preventDefault();
+        $("#list_sol").hide();
+        $("#card-form").hide();
+        $('#btn-list-c').hide();
+
+    })
+
+    $("#btn-consultar").click(function(){
+        event.preventDefault();
+        $('#btn-list-c').show();
+        $("#card-form").hide();
+
+    })
+    
+     //$('#btn-list-c').hide()
     })
     </script>
 </body>
