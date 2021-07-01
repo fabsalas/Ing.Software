@@ -380,9 +380,92 @@
                                 </div>
                               </div>
                             </div>
+                        </div>
                             <!--listado de solicitudes hechas-->
 
                             <!--historial de compra-->
+                            <div class="card" id="his-comp" style="margin-top:10%;margin-left: 10%;width:72%">
+                              <div class="card-header">
+                                <h5> Historial de compras
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btn-close-h">
+                                  <span aria-hidden="true">&times;</span>
+                                </button></h5>
+                              </div>
+                              <div class="card-body" id="card-his">
+                                <table class="table">
+                                  <thead class="thead-dark">
+                                    <tr>
+                                      <th scope="col">N°Producto</th>
+                                      <th scope="col">Fecha</th>
+                                      <th scope="col">Subtotal</th>
+                                      <th scope="col">Total</th>
+                                      <th scope="col">Metodo de pago</th>
+                                      <th scope="col">Imagen producto</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1532</th>
+                                      <td>12/03/2020</td>
+                                      <td>$379.990</td>
+                                      <td>$389.990 con envío</td>
+                                      <td>Transbank Webpay</td>
+                                      <td><button type="success" class="btn btn-success" data-toggle="modal" data-target="#modal-verimg">ver</button></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2374</th>
+                                      <td>02/08/2019</td>
+                                      <td>$329.990</td>
+                                      <td>$339.990 con envío</td>
+                                      <td>Tarjeta Credito</td>
+                                      <td><button type="success" class="btn btn-success" data-toggle="modal" data-target="#modal-verimg-2">ver</button></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <!--historial de compra termina aqui-->
+
+                            <!--modal para imagen de historial de compra-->
+                            <!--primer modal-->
+                            <div class="modal" tabindex="-1" id="modal-verimg">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">JEEP Bicicleta Vesubio Aro 27.5</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="../Img/882098008_1.jpg" style="width:94%">
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--segundo modal imagen-->
+                            <div class="modal" tabindex="-1" id="modal-verimg-2">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">OXFORD Bicicleta Rako Aro 29</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="../Img/14455074_1.jpg" style="width:94%">
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--modal para imagen de historial de compra termina aqui-->
 
                           </div>
                         </div>
@@ -412,6 +495,7 @@
         $('#card-form').hide()
         $('#list_sol').hide()
         $('#btn-list-c').hide()
+        $('#his-comp').hide()
         
 
     //para mostrar el listado de pedidos
@@ -453,8 +537,26 @@
         $("#card-form").hide();
 
     })
+    //para abrir la funcion historial de compra
+    $("#btn-hi").click(function(){
+        event.preventDefault();
+        $('#his-comp').show();
+        
+
+    })
+    //para cerrar el listado de historial de compra
+    $("#btn-close-h").click(function(){
+        event.preventDefault();
+        $('#his-comp').hide();
+       
+        
+        
+
+    })
+
     
-     //$('#btn-list-c').hide()
+    
+   
     })
     </script>
 </body>
